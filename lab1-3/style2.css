@@ -1,0 +1,162 @@
+body {
+    background-color: cadetblue;
+    width:100%;
+    height:100%;
+    margin:auto 0px;
+    padding:auto 0px;
+    
+}
+
+
+.container {
+    width: 1300px;
+    height: 800px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box1 {
+    width: 23%;
+    height: 75%;
+    margin: 0px 20px;
+    position: absolute;
+    text-align: center;
+    float: left;
+}
+
+@media screen and (max-width:710px)
+{
+    ul,p{
+       font-size: 13px;
+    }
+    
+}
+@media screen and (max-width:500px)
+{
+    ul,p{
+       font-size: 10px;
+       padding-left: 5px;
+       list-style-type: none;
+    }
+    body{
+        text-align: center;
+    }
+    
+    
+  
+}
+@media  screen and (max-width:450px)
+{
+    ul,p{
+       font-size: 7px;
+    }
+}
+
+
+img {
+    width: 83.3%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 15px;
+    position: absolute;
+    top: 85%;
+    transform: translate(-50%, -50%);
+
+}
+@media  screen and (min-width:500px)
+{
+   span{
+    font-size: 20px;
+   }
+}
+@media  screen and (min-width:800px)
+{
+   span{
+    font-size: 25px;
+   }
+}
+
+@media  screen and (min-width:1000px)
+{
+   span{
+    font-size: 30px;
+   }
+}
+
+.box2 {
+    width: 65.3%;
+    height:100%;
+    position: absolute;
+    right: 5%;
+
+}
+
+/*установить размер коробки и эффект матового стекла*/
+.subbox1,
+.subbox2,
+.subbox3,
+.subbox4,
+.subbox5 {
+    width: 47%;
+    height: 33%;
+    background-color: rgba(63, 63, 63, 0.45);
+    color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    
+    margin: auto;
+    box-sizing: border-box;
+   
+
+}
+
+.subbox1 {
+
+    position:absolute;
+    left: 5%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.subbox2 {
+    position:absolute;
+    left: 57%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.subbox3 {
+    position:absolute;
+    top: 35%;
+    left: 5%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.subbox4 {
+    position:absolute;
+    top: 35%;
+    left: 57%;
+    right: 5%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.subbox5 {
+    position:absolute;
+    top: 70%;
+    left: 5%;
+    height: 29%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
