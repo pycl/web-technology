@@ -9,6 +9,7 @@
     <title>Resume</title>
     <link rel="stylesheet" media="screen and (max-width: 400px)" href="style1.css">
     <link rel="stylesheet" media="screen and (min-width: 401px)" href="style2.css">
+   
 </head>
 
 
@@ -16,7 +17,7 @@
     <div class="container">
         <h1 align="center">Resume</h1>
         <hr>
-        <div class="box1"><img src="/Users/cl/Downloads/IMG_0614.jpg"><span class="qw">Чан Лэ</span></div>
+        <div class="box1"><img id ="content" src="/Users/cl/Downloads/IMG_0614.jpg"><div class="name">Чан Лэ</div></div>
         <div class="clear"></div>
         <div class="box2">
             <div class="subbox1">
@@ -63,14 +64,25 @@
                     <li><b>Адрес:</b><br>ул. Зорге, 21В, Ростов-на-Дону, Ростовская обл.</li>
                 </ul>
             </div>
-        
+
+            <div class="bbox">sdvsdvsd</div>
+           
 
         </div>
 
 
 
     </div>
-
+    <script>
+        var box = document.getElementsByClassName("name");
+        var rotateTimes = 1;
+        
+        box.onclick = function(){
+            
+            box.style.transform = 'rotateY('+180*rotateTimes+'deg)';
+            rotateTimes++;
+        }
+    </script>
 
 
 </body>

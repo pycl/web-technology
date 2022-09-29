@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>每点击一下，旋转90°</title>
+	<style>
+		#box{
+			width: 150px;
+			height: 120px;
+			background: red;
+		 transition: all 3s ease;
+		}
+	</style>
+</head>
+<body>
+	<div id = "box">test</div>
+	<script>
+		var box = document.getElementById("box");
+		var rotateTimes = 1;
+		
+		box.onclick = function(){
+			
+            box.style.transform = 'rotateY('+180*rotateTimes+'deg)';
+			rotateTimes++;
+		}
+	</script>
+</body>
+</html>
+
