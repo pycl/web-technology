@@ -9,15 +9,22 @@
     <title>Resume</title>
     <link rel="stylesheet" media="screen and (max-width: 400px)" href="style1.css">
     <link rel="stylesheet" media="screen and (min-width: 401px)" href="style2.css">
-   
+    <style>
+        #testBox {
+            opacity: 0;
+        }
+    </style>
+
 </head>
 
 
 <body>
-    <div class="container">
+    <div class="container" id="qwr">
         <h1 align="center">Resume</h1>
         <hr>
-        <div class="box1"><img id ="content" src="/Users/cl/Downloads/IMG_0614.jpg"><div class="name">Чан Лэ</div></div>
+        <div class="box1"><img id="testBox" src="dfg.jpg">
+            <div id="name">Чан Лэ</div>
+        </div>
         <div class="clear"></div>
         <div class="box2">
             <div class="subbox1">
@@ -35,7 +42,7 @@
                     <li>Веб-дизайн c HTML и CSS</li>
                 </ul>
             </div>
-    
+
 
             <div class="subbox3">
                 <p><b>&nbsp; ОБРАЗАВАНИЕ</b></p>
@@ -54,7 +61,7 @@
                     <li>Русский</li>
                 </ul>
             </div>
-        
+
 
             <div class="subbox5">
                 <p><b>&nbsp;КОНТАКТЫ</b></p>
@@ -65,27 +72,16 @@
                 </ul>
             </div>
 
-            <div class="bbox">sdvsdvsd</div>
-           
+
+
 
         </div>
 
 
 
     </div>
-    <script>
-        var box = document.getElementsByClassName("name");
-        var rotateTimes = 1;
-        
-        box.onclick = function(){
-            
-            box.style.transform = 'rotateY('+180*rotateTimes+'deg)';
-            rotateTimes++;
-        }
-    </script>
-
-
+  
+    <script src="javascript1.js"></script>
 </body>
 
 </html>
-
